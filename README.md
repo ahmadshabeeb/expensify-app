@@ -1,4 +1,4 @@
-#Getting Started:
+# Getting Started:
 1. Create a public folder 
 2. Inside the public folder, we should have the index.html
 3. Install a development web server, live server by running running the command:
@@ -28,8 +28,6 @@
         "javascript": "javascriptreact"
       },
       "emmet.triggerExpansionOnTab": true
-
-10. s
 
 #ES6 notes
 - var can be redefined and reassigned
