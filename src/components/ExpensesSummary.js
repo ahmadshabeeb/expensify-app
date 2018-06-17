@@ -4,20 +4,20 @@ import selectExpenses from '../selectors/Expenses';
 import getExpensesTotal from '../selectors/expenses-total';
 import numeral from 'numeral';
 
-export class ExpensesSummary extends React.Component {
-    render() {
-        return (
-            <div>
-            {
-                this.props.expenseCount ? (
-                    <p>You have {this.props.expenseCount} expenses of total {numeral(this.props.expensesTotal / 100).format('$0,00.00')}</p>
-                ) : (
-                    <p>You have no expenses</p>
-                )
-            }
-            </div>
-        );
-    };
+export const ExpensesSummary = ({ expenseCount, expensesTotal }) =>  {
+    const expenseWord = (expenseCount === 1) ? 'expense' : 'expenses'; 
+    const formattedExpensesTotal = numeral(expensesTotal / 100).format('$0,00.00');
+    return (
+        <div>
+        {
+            expenseCount ? (
+                <p>{expenseCount} {expenseWord} of total {formattedExpensesTotal}</p>
+            ) : (
+                <p>Expenses total {formattedExpensesTotal}</p>
+            )
+        }
+        </div>
+    );
 };
 
 const mapStateToProps = (state) => {

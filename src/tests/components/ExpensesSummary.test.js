@@ -14,3 +14,9 @@ test('should render Expenses summary with multipe expenses', ()=> {
     const wrapper = shallow(<ExpensesSummary expensesTotal={expensesTotal} expenseCount={expenses.length} />);
     expect(wrapper).toMatchSnapshot();
 });
+
+test('should render Expenses summary with single expenses', ()=> {
+    const expensesTotal = getExpensesTotal([expenses[2]]);
+    const wrapper = shallow(<ExpensesSummary expensesTotal={expensesTotal} expenseCount={1} />);
+    expect(wrapper).toMatchSnapshot();
+});
