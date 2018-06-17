@@ -34,13 +34,11 @@ class ExpenseForm extends React.Component {
         //e.persist();
         //this.setState(() => ({ note: e.target.value }));
         const note = e.target.value;
-        console.log(note);
         this.setState(() => ({ note }));
     };
 
     onAmountChange = (e) => {
         const amount = e.target.value;
-        console.log(amount);
         if (!amount || amount.match(/^\d{1,}(\.\d{0,2})?$/)) {
             this.setState(() => ({ amount }));
         }
