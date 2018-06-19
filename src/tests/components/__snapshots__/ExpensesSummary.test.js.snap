@@ -3,7 +3,6 @@
 exports[`should render Expenses summary with multipe expenses 1`] = `
 <div>
   <p>
-    You have 
     3
      
     expenses
@@ -16,7 +15,8 @@ exports[`should render Expenses summary with multipe expenses 1`] = `
 exports[`should render Expenses summary with no expenses 1`] = `
 <div>
   <p>
-    You have no expenses
+    Expenses total 
+    $0.00
   </p>
 </div>
 `;
@@ -24,7 +24,6 @@ exports[`should render Expenses summary with no expenses 1`] = `
 exports[`should render Expenses summary with single expenses 1`] = `
 <div>
   <p>
-    You have 
     1
      
     expense
