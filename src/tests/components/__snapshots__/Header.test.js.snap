@@ -24,5 +24,8 @@ exports[`should render Header correctly 1`] = `
   </NavLink>
    
   <br />
+  <button>
+    Log out
+  </button>
 </header>
 `;
