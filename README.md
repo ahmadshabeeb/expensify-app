@@ -18,3 +18,7 @@ This is a web app about saving expenses, the app has also a responsive layout.
  #### To run the app in development mode:
  
 	yarn run dev-server
+	
+ #### To run the app in test mode: 
+ 
+	yarn test
