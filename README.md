@@ -1,53 +1,20 @@
-# Getting Started:
-1. Create a public folder 
-2. Inside the public folder, we should have the index.html
-3. Install a development web server, live server by running running the command:
-    npm install -g live-server
+# Expensify
 
-5. To serve up our application, we should run the command:
-    live server public
+This is a web app about saving expenses, the app has also a responsive layout.
 
-6. Install Babel so you can use JSX, run the command:
-    npm install -g babel-cli@6.24.1
+- **Reactjs** and **Redux** are used in the project to build and manage the state of the components.
 
-7. Install presets react and env
-    yarn init, sets up our project to use yarn that will allow us
-    to specify the local dependencies.
-    yarn add babel-preset-react@6.24.1 babel-preset-env@1.5.2
+- CSS and SASS are used for styling the app.
 
-8. At the root of the project create a folder src,  and then a file app.js
-    in this app.js we will have our code with the JSX
-    then on the cmd run the following command:
-    babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
-    now everytime we change our app.js in src aoutmatically will use babel to compile
-    JSX to the right format.   
+- For the back-end Express and Firebase are used to create a server and Realtime database.
 
-9. To add autocompletion for JSX opening tags, go to prefrences, setting 
-    and add these lines:
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-      },
-      "emmet.triggerExpansionOnTab": true
+- Google authentication, Webpack and Babel are used.
 
-#ES6 notes
-- var can be redefined and reassigned
-- let cannot be redefined but can be reassigned
-- const cannot be redefined and cannot be reassigned
+- Jest and Enzyme is used for testing.
 
-- var is funcation scoped but not block scoped
-- let and const are both fucntion and block scoped
-
-####NOTE: never use var
-
-- With arrow functions we have no access to the arguments inisde of a function
-- With arrow functions we have no priblem with binding 'this' keyword in nested functions
-- Arrow functions do not bind its own 'this' value, so this is why we better not use them to define
-    object methods
-- map fucntion is exetremely powerful function, it takes a function(preferably arrow function) as an argument
-    map function return a new array, it does not affect the original array and it allows to manipulate data inside the function
-
-- JSX has no databinding 
-
-- Methods inside of a component cannot access the 'this'.
-    any method will be invoked and may use 'this' must bind 'this', ex:
-        this.handelAddOption.bind(this)
+ The deployed version of the app on **Heroku** can be find [here](https://expensify-reactjs-course-udemy.herokuapp.com/dashboard).
+ 
+ 
+ #### To run the app in development mode:
+ 
+	yarn run dev-server
