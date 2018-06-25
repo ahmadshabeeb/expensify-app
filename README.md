@@ -1,7 +1,7 @@
 # Expensify
 
 This is a web app about saving expenses, the app has also a responsive layout.
-- yarn is used as a package manager
+- Yarn is used as a package manager
 
 - **Reactjs** and **Redux** are used in the project to build and manage the state of the components.
 
@@ -22,7 +22,7 @@ This is a web app about saving expenses, the app has also a responsive layout.
 	npm install
 
 ##### Set database for development
-A file with name .env.development should be created as follow:
+A file with name .env.development should be created at the root of the project containing a key-value pairs as follow:
 
 	FIREBASE_API_KEY=
 	FIREBASE_AUTH_DOMAIN=
@@ -32,7 +32,7 @@ A file with name .env.development should be created as follow:
 	FIREBASE_MESSAGING_SENDER_ID=
 
 ##### Set database for test
-A file with name .env.test should be created as follow:
+A file with name .env.test should be created at the root of the project containing a key-value pairs as follow
 
 	FIREBASE_API_KEY= 
 	FIREBASE_AUTH_DOMAIN=
